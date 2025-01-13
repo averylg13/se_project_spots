@@ -73,6 +73,7 @@ background-color: #212121;
 color: #fcf5e5;
 padding: 18px 32px;
 border-radius: 8px;
+border: none;
 }
 
 .profile__add-button:hover {
