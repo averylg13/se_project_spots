@@ -1,0 +1,130 @@
+.profile {
+height: auto;
+padding-top: 34px;
+padding-bottom: 20px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+border-bottom: 1px solid rgba(33, 33, 33, 0.4);
+}
+
+.profile__row {
+max-width: 505px;
+/*max-height: 190px;*/
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
+
+.profile__image {
+width: 190px;
+height: 190px;
+border-radius: 8px;
+}
+
+.profile__column {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.profile__name {
+    font-size: 32px;
+    line-height: 1;
+    margin: 0 0 12px;
+    padding: 0;
+    text-overflow: ellipsis;
+  overflow: hidden;
+  line-clamp: 3;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;
+}
+.profile__description {
+color: #212121;
+opacity: 70%;
+margin: 0 0 auto;
+text-overflow: ellipsis;
+  overflow: hidden;
+  line-clamp: 3;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 420px;
+}
+
+.profile__edit-button {
+align-self: flex-start;
+border: none;
+background-color: transparent;
+opacity: 70%;
+padding: 0;
+}
+
+.profile__edit-button:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.profile__add-button {
+align-self: flex-end;
+background-color: #212121;
+color: #fcf5e5;
+padding: 18px 32px;
+border-radius: 8px;
+}
+
+.profile__add-button:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 668px) {
+    .profile {
+        flex-direction: column;
+        max-width: 288px;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin: 0 auto;
+        gap: 20px;
+        
+    }
+
+    .profile__row {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        height: auto;
+        
+    }
+
+    .profile__image {
+        height: 80px;
+        width: 80px;
+    }
+
+    .profile__name {
+        font-size: 20px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+        line-height: 1;
+    }
+
+    .profile__description {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .profile__edit-button {
+        align-self: center;
+    }
+
+    .profile__add-button {
+        align-self: center;
+        width: 100%;
+        margin-bottom: 0;
+        
+    }
+}
