@@ -13,7 +13,7 @@ Spots is an image sharing site where you can post images for the world to see. Y
 * VS Code  
   
 ## Deployment
-This webpage is deployed to GitHub Pages
+This webpage is deployed to GitHub Page
 - [Deployment link](https://averylg13.github.io/se_project_spots/)
 
 ## Images
