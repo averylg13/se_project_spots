@@ -7,6 +7,6 @@ display: flex;
 .footer__content {
 margin: 0 auto;
 padding: 60px 0;
-font-weight: 400px;
+font-weight: 400;
 opacity: 70%;
 }
