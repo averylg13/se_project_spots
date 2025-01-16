@@ -1,5 +1,6 @@
 .card {
     height: 445px;
+    font-weight: 500;
     padding: 0;
     margin: 0;
     display: flex;
@@ -22,7 +23,7 @@
     padding: 0;
     margin: 0;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     width: auto;
     text-overflow: ellipsis;
     white-space: nowrap;
