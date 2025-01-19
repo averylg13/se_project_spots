@@ -16,6 +16,9 @@ Spots is an image sharing site where you can post images for the world to see. Y
 This webpage is deployed to GitHub Page
 - [Deployment link](https://averylg13.github.io/se_project_spots/)
 
+## Project Video
+- [Video Link](https://drive.google.com/file/d/1M2R67HDzgxSA--WyweJKPvkxuPi2i61E/view?usp=sharing)
+
 ## Images
 ![mobile view](images/demo/mobile%20view.png)
 ![desktop view](images/demo/entire%20page.png)
