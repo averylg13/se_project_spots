@@ -39,8 +39,10 @@
     padding: 0;
     background-image: url(../images/Union.svg);
     background-color: transparent;
-    border: none;
+    border: 2px hidden;
+    background-position: center;
     background-size: cover;
+    
 }
 
 .card__icon:hover {
