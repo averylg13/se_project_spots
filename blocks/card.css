@@ -48,7 +48,6 @@
 .card__icon:hover {
     opacity: 100%;
     cursor: pointer;
-    background-color: transparent;
 }
 
 @media screen and (max-width: 668px) {
