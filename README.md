@@ -10,7 +10,8 @@ Spots is an image sharing site where you can post images for the world to see. Y
 * CSS
 * Responsive Design
 * Figma
-* VS Code  
+* VS Code
+* JavaScript
   
 ## Deployment
 This webpage is deployed to GitHub Page
