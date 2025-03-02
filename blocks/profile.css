@@ -137,6 +137,7 @@
         font-size: 20px;
         margin-top: 12px;
         margin-bottom: 6px;
+        text-align: center;
     }
 
     .profile__description {

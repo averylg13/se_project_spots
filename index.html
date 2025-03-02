@@ -27,36 +27,13 @@
                 <button type="button" class="profile__add-button">New Post</button>
             </section>
             <section class="cards">
+                <template id="card-template">
                     <article class="card">
-                        <img src="./images/val-thorens-min.png" alt="Val Thorens" class="card__image">
-                        <h2 class="card__name">Val Thorens</h2>
+                        <img src="" alt="" class="card__image">
+                        <h2 class="card__name"></h2>
                         <button type="button" class="card__icon"></button>
                     </article>
-                    <article class="card">
-                        <img src="./images/terrace-min.png" alt="Restauraunt Terrace" class="card__image">
-                        <h2 class="card__name">Restauraunt Terrace</h2>
-                        <button type="button" class="card__icon"></button>
-                    </article>
-                    <article class="card">
-                        <img src="./images/cafe-min.png" alt="An outdoor cafe" class="card__image">
-                        <h2 class="card__name">An outdoor cafe</h2>
-                        <button type="button" class="card__icon"></button>
-                    </article>
-                    <article class="card">
-                        <img src="./images/bridge-min.png" alt="A very long bridge, over the forrest" class="card__image">
-                        <h2 class="card__name">A very long bridge, over the forest...</h2>
-                        <button type="button" class="card__icon"></button>
-                    </article>
-                    <article class="card">
-                        <img src="./images/tunnel-min.png" alt="Tunnel with morning light" class="card__image">
-                        <h2 class="card__name">Tunnel with morning light</h2>
-                        <button type="button" class="card__icon"></button>
-                    </article>
-                    <article class="card">
-                        <img src="./images/house-min.png" alt="Mountain house" class="card__image">
-                        <h2 class="card__name">Mountain house</h2>
-                        <button type="button" class="card__icon"></button>
-                    </article>
+                </template>
             </section>
         </main>
         <footer class="footer">
@@ -67,13 +44,13 @@
                 <button type="submit" class="modal__close-btn"></button>
                 <h2 class="modal__title">Edit profile</h2>
                 <form name="edit-profile" class= "modal__form">
-                    <label for="name" class="modal__label">
+                    <label for="profile-name-input" class="modal__label">
                         Name
-                        <input type="text" class="modal__input" id="name" placeholder="Type your name">
+                        <input type="text" class="modal__input" id="profile-name-input" placeholder="Type your name">
                     </label>
-                    <label for="description" class="modal__label">
+                    <label for="profile-description-input" class="modal__label">
                         Description
-                        <input type="text" class="modal__input" id="description" placeholder="Describe yourself">
+                        <input type="text" class="modal__input" id="profile-description-input" placeholder="Describe yourself">
                     </label>
                     <button class="modal__submit-btn" type="submit">Save</button>
                 </form>
