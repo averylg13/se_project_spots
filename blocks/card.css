@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .card__image {
@@ -16,6 +17,7 @@
     padding: 0;
     object-fit: cover;
     display: block;
+    cursor: pointer;
 }
 
 .card__name {
@@ -42,11 +44,38 @@
     border: 2px hidden;
     background-position: center;
     background-size: cover;
-    
+    transition: opacity 0.3s ease;
 }
 
 .card__icon:hover {
     opacity: 100%;
+    cursor: pointer;
+}
+
+.card__icon_active {
+    background-image: url(../images/like-btn-active.svg);
+    opacity: 100%;
+}
+
+.card__icon_active:hover {
+    opacity: 50%;
+}
+
+.card__delete-icon {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/delete-icon.svg);
+    background-color: transparent;
+    border: none;
+    right: 10px;
+    top: 10px;
+}
+
+.card__delete-icon:hover {
+    background-image: url(../images/delete-icon-hover.svg);
     cursor: pointer;
 }
 
