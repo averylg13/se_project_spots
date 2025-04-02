@@ -107,11 +107,6 @@ transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0s 0.3s;
 opacity: 0;
 }
 
-.modal__preview_opened {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0s 0s;
-}
 
 .modal__preview-container {
 position: relative;
