@@ -86,7 +86,7 @@ function getCardElement(data) {
     previewModalImage.src = data.link; 
     previewModalImage.alt = data.name; 
     previewModalCaption.textContent = data.name; 
-    previewModal.classList.add("modal_opened"); 
+    openModal(previewModal);
   });
 
   likeButton.addEventListener("click", () => {
@@ -150,7 +150,7 @@ closeButtons.forEach((button) => {
 
 previewModal.addEventListener("click", (event) => {
   if(event.target === previewModal) {
-    previewModal.classList.remove("modal_opened");
+    closeModal(previewModal);
   }
 });
 

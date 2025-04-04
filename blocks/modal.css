@@ -116,19 +116,13 @@ padding: 0;
 }
 
 .modal__preview-exit-btn {
-    position: absolute;
     background-image: url(../images/preview-close-btn.svg);
     width: 40px;
     height: 40px;
-    background-color: transparent;
-    background-size: cover;
-    background-position: center;
-    border: none;
     right: -53px;
     top: 0;
     margin: 0;
     padding: 0;
-    cursor: pointer;
 }
 
 .modal__preview-img {
