@@ -1,3 +1,4 @@
+
 //ARRAYS
 
 const initialCards = [
@@ -54,6 +55,7 @@ const newPostForm = newPostModal.querySelector(".modal__form");
 const newPostButton = document.querySelector(".profile__add-button");
 const newPostCaption = document.getElementById("caption");
 const imageLinkInput = document.getElementById("image-link-input");
+const newPostSubmitButton = newPostModal.querySelector(".modal__submit-btn")
 
 const cardsList = document.querySelector(".cards");
 const cardTemplate = document.querySelector("#card-template");
@@ -63,7 +65,6 @@ const previewModal = document.querySelector("#image-preview-modal");
 const previewModalImage = previewModal.querySelector(".modal__preview-img");
 const previewModalCaption = previewModal.querySelector(".modal__preview-caption");
 const previewModalCloseBtn = previewModal.querySelector(".modal__preview-exit-btn");
-
 
 const closeButtons = document.querySelectorAll(".modal__close-btn");
 
@@ -102,10 +103,12 @@ function getCardElement(data) {
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  document.addEventListener('keydown', handleEscClose);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  document.removeEventListener('keydown', handleEscClose);
 }
 
 function handleEditFormSubmit(evt) {
@@ -124,8 +127,15 @@ function handleNewPostCreation(evt) {
   };
   const newCard = getCardElement(newCardData);
   cardsList.prepend(newCard);
-  closeModal(newPostModal);
   evt.target.reset();
+  disableButton(newPostSubmitButton, validationConfig);
+  closeModal(newPostModal);
+}
+
+function handleEscClose(evt) {
+  if (evt.key === 'Escape') {
+    closeModal(document.querySelector('.modal_opened'));
+  }
 }
 
 //EVENT LISTENERS
@@ -133,6 +143,7 @@ function handleNewPostCreation(evt) {
 profileEditButton.addEventListener("click", () => {
   editModalNameInput.value = profileName.textContent;
   editModalDescriptionInput.value = profileDescription.textContent;
+  resetValidation(editFormElement, [editModalNameInput, editModalDescriptionInput], validationConfig);
   openModal(editModal);
 });
 

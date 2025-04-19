@@ -80,6 +80,11 @@ line-height: 1;
     border: 1.5px solid rgba(0, 0, 0, 1);
 }
 
+.modal__input-error {
+border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
+
 .modal__submit-btn {
     width: 156px;
     padding: 18px 0;
@@ -90,6 +95,12 @@ line-height: 1;
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
+}
+
+.modal__submit-btn-inactive {
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .modal__preview{
@@ -147,6 +158,18 @@ position: absolute;
 left: 0;
 bottom: -36px;
 }
+
+.modal__error {
+    color: red;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+    display: block;
+}
+
+.modal__error_visible {
+    visibility: visible;
+  }
 
 @media  screen and (max-width: 668px) {
     .modal {
